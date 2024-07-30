@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="gamePane" prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spaceshootinggame.view.GameController">
+    <children>
+        <ImageView fx:id="background" fitHeight="720" fitWidth="1280" preserveRatio="false">
+            <image>
+                <Image url="@images/bg/game%20bg.jpg" />
+            </image>
+        </ImageView>
+        <Label fx:id="scoreLabel" layoutX="10" layoutY="10" text="Score: 0" />
+        <Label fx:id="timerLabel" layoutX="10" layoutY="40" text="Time: 60" />
+    </children>
+</AnchorPane>

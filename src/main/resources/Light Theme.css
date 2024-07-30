@@ -1,0 +1,35 @@
+.table-view, .grid-pane {
+    -fx-base: white;
+    -fx-control-inner-background: white;
+    -fx-background-color: white;
+    -fx-table-cell-border-color: black; /* Set the border color for table cells */
+    -fx-table-header-border-color: black; /* Set the border color for table headers */
+    -fx-padding: 5;
+    -fx-border-color: black; /* Set the border color for the entire table */
+    -fx-border-width: 1px; /* Set the border width for the entire table */
+}
+
+.table-view .column-header-background, .grid-pane .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler, .grid-pane .column-header, .grid-pane .filler {
+    -fx-size: 15;
+    -fx-border-width: 1px 1px 1px 1px; /* Make the border full (all sides) */
+    -fx-background-color: transparent;
+    -fx-border-color: black black black black; /* Set the border color for column headers */
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label, .grid-pane .column-header .label {
+    -fx-font-size: 8pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected, .grid-pane:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+    -fx-border-color: black,black;
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spaceshootinggame.view.InformationPageController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@images/bg/blue.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="83.0" layoutX="46.0" layoutY="36.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icon/left.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="304.0" layoutY="70.0" prefHeight="602.0" prefWidth="698.0" styleClass="grid-pane" stylesheets="@Light%20Theme.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@images/icon/button.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="122.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@images/icon/spacekey.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="107.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@images/alien1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="102.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@images/icon/60-minutes.png" />
+               </image>
+            </ImageView>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" text="Control the Spaceship&#10;using UP, DOWN, LEFT,RIGHT." GridPane.columnIndex="1">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </TextArea>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" text="Use spacebar to fire bullets&#10;and attack the alien." GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </TextArea>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" text="Attack the aliens to score. &#10;You will get 10 marks for &#10;each time you hit the alien.&#10;If you missed the aliens &gt;5 times,&#10;you will game over." GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </TextArea>
+            <TextArea editable="false" prefHeight="161.0" prefWidth="359.0" text="This game only runs for &#10;60 minutes, so make sure you&#10;earn as much points as possible." GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </TextArea>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

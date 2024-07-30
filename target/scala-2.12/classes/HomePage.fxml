@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spaceshootinggame.view.HomePageController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@images/bg/blue.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="308.0" fitWidth="576.0" layoutX="352.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icon/Space-Shooting.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="180.0" fitWidth="240.0" layoutX="550.0" layoutY="347.0" onMouseClicked="#handleStartGame" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icon/start-button.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1084.0" layoutY="556.0" onMouseClicked="#handleInfo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icon/game%20info.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="907.0" layoutY="556.0" onMouseClicked="#handleScoreboard" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icon/rating_707712.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
